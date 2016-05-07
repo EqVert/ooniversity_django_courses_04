@@ -22,7 +22,7 @@ SECRET_KEY = '+yludmv6z6ng$9&ndb=bp2zy)#9z0xx()yuqagz=xcd6%k04k6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -132,3 +132,8 @@ LOGGING = {
     },
 
 }
+
+try:
+	from local_setting import *
+except ImportError:
+	print "Warning! local_setting are not defined!"

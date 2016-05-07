@@ -6,3 +6,4 @@
 *.log~
 courses_logger
 students_logger
+pybursa/local_setting.py
